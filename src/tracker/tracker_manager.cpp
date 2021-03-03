@@ -147,7 +147,7 @@ void TrackerTesterAlov::VideoInit(const Video& video, const size_t video_num) {
 
     // Open a video_writer object to save the tracking videos.
     const string video_out_name = video_out_folder + "/Video" + num2str(static_cast<int>(video_num)) + ".avi";
-    video_writer_.open(video_out_name, CV_FOURCC('M','J','P','G'), 50, image.size());
+    video_writer_.open(video_out_name, cv::VideoWriter::fourcc('M','J','P','G'), 50, image.size());
   }
 }
 

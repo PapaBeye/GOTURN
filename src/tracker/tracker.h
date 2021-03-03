@@ -1,7 +1,7 @@
 #ifndef TRACKER_H
 #define TRACKER_H
 
-#include <opencv/cv.h>
+#include <opencv2/opencv.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
@@ -29,7 +29,7 @@ public:
 
 private:
   // Show the tracking output, for debugging.
-  void ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_search_region, const BoundingBox& bbox_estimate) const;
+  void ShowTracking(const cv::Mat& , const cv::Mat& curr_search_region, const BoundingBox& bbox_estimate) const;
 
   // Predicted prior location of the target object in the current image.
   // This should be a tight (high-confidence) prior prediction area.  We will
