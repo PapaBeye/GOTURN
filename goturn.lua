@@ -44,6 +44,7 @@ project "GOTURN"
         "cufft",
 		"cudart",
         "cusparse",
+        "opencv_imgcodecs",
         "cufftw",
         "curand",
         "opencv_highgui",
@@ -66,6 +67,7 @@ project "GOTURN"
         "boost_filesystem",
         "boost_regex",
         "tinyxml",
+        "glog",
         "pthread",
 
     }
