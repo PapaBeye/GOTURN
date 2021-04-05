@@ -7,3 +7,4 @@ nets/tracker_output/
 GOTURN.mk
 GOTURN.project
 GOTURN.txt
+Makefile
